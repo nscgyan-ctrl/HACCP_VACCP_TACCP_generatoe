@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@media print {
+  body {
+    font-size: 10pt;
+    color: #000 !important;
+    background: #fff !important;
+  }
+  
+  table {
+    page-break-inside: auto;
+  }
+  
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  
+  thead {
+    display: table-header-group;
+  }
+}
